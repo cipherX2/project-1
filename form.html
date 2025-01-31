@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <h2>Registration Form</h2>
+
+    <form action="/submit_form" method="POST">
+      <!-- Full Name -->
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required /><br /><br />
+
+      <!-- Email Address -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <!-- Phone Number -->
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required /><br /><br />
+
+      <!-- Gender -->
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="Male" />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="Female" />
+      <label for="female">Female</label>
+      <input type="radio" id="other" name="gender" value="Other" />
+      <label for="other">Other</label><br /><br />
+
+      <!-- Date of Birth -->
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required /><br /><br />
+
+      <!-- Country -->
+      <label for="country">Country:</label>
+      <select id="country" name="country">
+        <option value="usa">USA</option>
+        <option value="uk">United Kingdom</option>
+        <option value="india">India</option>
+        <option value="canada">Canada</option></select
+      ><br /><br />
+
+      <!-- Agree to Terms -->
+      <label for="terms">I agree to the terms and conditions:</label>
+      <input type="checkbox" id="terms" name="terms" required /><br /><br />
+
+      <!-- Submit Button -->
+      <button type="submit">Register</button>
+    </form>
+  </body>
+</html>
